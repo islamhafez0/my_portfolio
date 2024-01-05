@@ -106,7 +106,7 @@ const ContactLayout = () => {
           </div>
           <form
             onSubmit={handleSubmit}
-            className={`flex flex-col w-full ${classes.form} rounded-t-none  p-8 lg:rounded-l-none lg:rounded-lg gap-4`}
+            className={`flex flex-col w-full ${classes.form} rounded-t-none  py-8 px-4 md:p-8 lg:rounded-l-none lg:rounded-lg gap-4`}
           >
             {error && (
               <span className="bg-red-500 p-4 font-medium">
