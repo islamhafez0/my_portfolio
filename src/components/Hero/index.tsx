@@ -2,7 +2,7 @@ import classes from "./index.module.scss";
 import { IoFlashOutline } from "react-icons/io5";
 import { TiContacts } from "react-icons/ti";
 import heroImage from "../../assets/hero-image.webp";
-import personImage from "../../assets/person.svg";
+import personImage from "../../assets/person.webp";
 import star from "../../assets/star.svg";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
