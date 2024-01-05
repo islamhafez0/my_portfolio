@@ -1,12 +1,6 @@
 import Header from "./components/Header";
 import Stars from "./components/Stars";
-import {
-  BrowserRouter,
-  Route,
-  Routes,
-  useLocation,
-  useNavigate,
-} from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import AboutPage from "./pages/About";
@@ -19,7 +13,6 @@ import CreateAccount from "./pages/CreateAccount";
 import NotFound from "./pages/NotFound";
 import Logout from "./components/Logout";
 import ProfileLayout from "./components/Profile";
-import { useEffect, useState } from "react";
 import Blog from "./pages/Blog";
 
 function App() {

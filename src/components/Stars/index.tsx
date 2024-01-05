@@ -2,8 +2,8 @@ import React from "react";
 import classes from "./index.module.scss";
 const Stars = () => {
   return (
-    <div className={classes.starsWrapper}>
-      <div className={classes.stars}></div>
+    <div className={`w-full fixed top-0 left-0 `}>
+      <div className={`${classes.stars}`}></div>
     </div>
   );
 };

@@ -1,30 +1,30 @@
-# React + TypeScript + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Technologies Used:**
 
-Currently, two official plugins are available:
+- Javascript & Typescript & Tailwind
+- React.js for frontend development.
+- Firebase for secure user authentication.
+- Node.js for server-side development.
+- Nodemailer for backend handling of the contact form.
+- Modern design approach for a visually appealing UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Page Features:**
 
-## Expanding the ESLint configuration
+1. **Home Page:**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+   - Hero section.
+   - About Me section.
+   - Skills showcase.
+   - Project highlights.
+   - Contact form.
+   - Single-page and individual page routes.
 
-- Configure the top-level `parserOptions` property like this:
+2. **Additional Pages:**
+   - **Login and Signup:** Secure user authentication.
+   - **Profile:** More about me.
+   - **Blog:** Platform for sharing updates.
+   - **Project Details:** In-depth information about specific projects.
+   - **Contact Page:** Backend-driven contact form sending data via Nodemailer.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+This portfolio application showcases a dynamic and responsive user interface, leveraging React.js and Firebase for a seamless and secure user experience. The incorporation of additional features like a blog and detailed project pages enhances the overall functionality and engagement.
