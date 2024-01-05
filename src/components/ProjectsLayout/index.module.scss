@@ -1,0 +1,30 @@
+.projectsSection::after,
+.projectsSection::before {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(128 128 128 / 8%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  opacity: 0.4;
+}
+.projectsSection::after {
+  left: 0;
+  bottom: -50px;
+}
+.projectsSection::before {
+  left: 0;
+  top: -50px;
+}
+.box {
+  background-color: rgba(128, 128, 128, 0.1);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border-width: 1px;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+}
+.box {
+}

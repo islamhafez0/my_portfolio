@@ -1,0 +1,12 @@
+.aboutCard {
+  box-shadow: 0px 1px 4px 0px #bb6bd9;
+}
+.aboutCard:hover {
+  box-shadow: 0px 0px 8px 0px #bb6bd9;
+}
+
+@media screen and (min-width: 1200px) {
+  .aboutCard {
+    width: 260px;
+  }
+}

@@ -1,0 +1,10 @@
+.vis {
+  transform: translateY(0);
+}
+.hid {
+  transform: translateY(200px);
+}
+.vis,
+.hid {
+  transition: 0.3s;
+}

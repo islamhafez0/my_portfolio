@@ -1,0 +1,33 @@
+.introTitle {
+  background: linear-gradient(
+      90deg,
+      #f860d8 0.06%,
+      #5c4bf6 50.73%,
+      #45bcff 100.06%
+    ),
+    linear-gradient(0deg, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.btnPrimary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.btnSecondry {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+  border-width: 1px;
+}
+.btnPrimary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(92 75 246 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.btnSecondry:hover {
+  --tw-bg-opacity: 1;
+  color: rgb(92 75 246 / var(--tw-bg-opacity));
+  border-color: rgb(92 75 246 / var(--tw-bg-opacity));
+}
