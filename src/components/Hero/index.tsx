@@ -79,7 +79,7 @@ const Hero = () => {
               delayMethod="debounce"
               alt="person"
               onLoad={() => handleImageLoaded("personImage")}
-              className="w-[103px]"
+              className="w-[103px] h-[23.75px]"
             />
             <div className="flex items-center">
               <p>Trusted </p>
