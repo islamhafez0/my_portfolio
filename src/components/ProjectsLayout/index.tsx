@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { projects } from "./projects";
 import { FiGithub } from "react-icons/fi";
 import { IoFlashOutline } from "react-icons/io5";
-import banner from "../../assets/img/banner-bg.png";
+import banner from "../../assets/img/banner-bg.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ProjectsLayout = () => {

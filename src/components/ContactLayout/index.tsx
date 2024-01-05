@@ -2,7 +2,7 @@ import React, { ChangeEvent, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import classes from "./index.module.scss";
 import contactImage from "../../assets/img/contact-img.svg";
-import bg from "../../assets/img/color-sharp.png";
+import bg from "../../assets/img/color-sharp.webp";
 import { useFetcher } from "../../hooks/useFetcher";
 import { ContactFormInputs } from "../../constants";
 import { TUserContactData } from "../../interface";

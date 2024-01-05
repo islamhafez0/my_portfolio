@@ -1,7 +1,7 @@
-import backendImage from "../../assets/backend.png";
-import webImage from "../../assets/web.png";
-import creatorImage from "../../assets/creator.png";
-import mobileImage from "../../assets/mobile.png";
+import backendImage from "../../assets/backend.webp";
+import webImage from "../../assets/web.webp";
+import creatorImage from "../../assets/creator.webp";
+import mobileImage from "../../assets/mobile.webp";
 import { CardObject } from "../../interface";
 
 export const cards: CardObject[] = [

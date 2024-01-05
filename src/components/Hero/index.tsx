@@ -41,7 +41,7 @@ const Hero = () => {
               className={`${classes.heroImage} transition-all absolute left-2/4 -translate-x-2/4 w-full sm:w-[500px] lg:w-[700px] mb-24 sm:mb-36 -z-30`}
               alt="hero"
               onLoad={() => handleImageLoaded("heroImage")}
-              loading="lazy"
+              loading="eager"
             />
           </div>
           <div className="p-4 md:p-8">
@@ -79,10 +79,11 @@ const Hero = () => {
               delayMethod="debounce"
               alt="person"
               onLoad={() => handleImageLoaded("personImage")}
+              className="w-[103px]"
             />
             <div className="flex items-center">
               <p>Trusted </p>
-              <img className="mx-2" src={star} alt="star" />
+              <img className="mx-2 w-5 h-5" src={star} alt="star" />
               <p> by developers</p>
             </div>
           </div>

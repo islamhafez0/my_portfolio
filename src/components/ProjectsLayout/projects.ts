@@ -7,17 +7,17 @@ import p2_1 from "../../assets/projects/p2_1.jpg";
 import p2_2 from "../../assets/projects/p2_2.jpg";
 import p2_3 from "../../assets/projects/p2_3.jpg";
 
-import p3_1 from "../../assets/projects/p3_1.png";
+import p3_1 from "../../assets/projects/p3_1.webp";
 import p3_2 from "../../assets/projects/p3_2.png";
 import p3_3 from "../../assets/projects/p3_3.png";
 
 import p4_1 from "../../assets/projects/p4_1.png";
 import p6_1 from "../../assets/projects/p6_1.png";
-import p7_1 from "../../assets/projects/p7_1.png";
+import p7_1 from "../../assets/projects/p7_1.webp";
 
-import p8_1 from "../../assets/projects/p8_1.png";
-import p8_2 from "../../assets/projects/p8_2.png";
-import p8_3 from "../../assets/projects/p8_3.png";
+import p8_1 from "../../assets/projects/p8_1.webp";
+import p8_2 from "../../assets/projects/p8_2.webp";
+import p8_3 from "../../assets/projects/p8_3.webp";
 
 import p9_1 from "../../assets/projects/p9_1.png";
 export const projects: ProjectTypes[] = [
