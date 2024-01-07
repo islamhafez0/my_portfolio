@@ -99,3 +99,23 @@ button {
 .loading {
   filter: blur(8px);
 }
+.header {
+  transform: translateY(0);
+  transition: all ease 0.5s;
+  z-index: 10;
+  &.top {
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    background-color: #0e0e113d;
+  }
+  &.show {
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    background-color: #0e0e113d;
+  }
+  &.hide {
+    backdrop-filter: blur(6.5px);
+    transform: translateY(-90px);
+    background: rgba(0, 0, 0, 0.25);
+  }
+}

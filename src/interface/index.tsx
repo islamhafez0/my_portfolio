@@ -10,6 +10,7 @@ export type Links = {
 export type Card = {
   image: string;
   title: string;
+  transitionDelay: number;
 };
 export type CardObject = {
   card: Card;
@@ -159,3 +160,8 @@ export interface ILinkItemsDetails {
   alt: string;
   link: string;
 }
+export type IntersectionTypes = {
+  inView: boolean;
+  observe: (target: Element) => void;
+  unobserve: (target: Element) => void;
+};

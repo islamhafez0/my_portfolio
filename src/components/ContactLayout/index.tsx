@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useEffect, useState } from "react";
+import React, { ChangeEvent, useEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom";
 import classes from "./index.module.scss";
 import contactImage from "../../assets/img/contact-img.svg";
@@ -9,11 +9,12 @@ import { TUserContactData } from "../../interface";
 import { Link, useLocation } from "react-router-dom";
 import Alert from "../Alert";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-
+import { useInView, motion } from "framer-motion";
 const ContactLayout = () => {
   const location = useLocation();
   const isContactPage = location.pathname === "/pages/contact";
-
+  const contactRef = useRef(null);
+  const isInView = useInView(contactRef);
   if (isContactPage) {
     useEffect(() => {
       document.title = "Contact";
@@ -69,9 +70,13 @@ const ContactLayout = () => {
     setAlert(false);
   };
   return (
-    <section className="w-full mb-16 mt-16 px-4 md:px-8 py-4">
+    <section ref={contactRef} className="w-full mb-16 mt-16 px-4 md:px-8 py-4">
       <div className="flex flex-col max-w-2xl sm:px-5 lg:max-w-7xl mx-auto">
-        <div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 90 }}
+          transition={{ duration: 0.7 }}
+        >
           <p className="text-gray-400 text-base">Get in Touch</p>
           <div className="flex items-center justify-between">
             <h2 className="text-2xl lg:text-5xl font-bold linearTitle mt-1 mb-4">
@@ -86,14 +91,21 @@ const ContactLayout = () => {
               </Link>
             )}
           </div>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: isInView ? 1 : 0 }}
+          transition={{ duration: 0.7 }}
           style={{
             backgroundImage: `url(${bg})`,
           }}
           className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 place-items-center rounded-lg overflow-hidden mt-16"
         >
-          <div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : -800 }}
+            transition={{ duration: 0.9 }}
+          >
             <LazyLoadImage
               className="w-full max-w-[500px] transition-opacity"
               src={contactImage}
@@ -103,8 +115,11 @@ const ContactLayout = () => {
               onLoad={() => setImageLoaded(true)}
               height={375}
             />
-          </div>
-          <form
+          </motion.div>
+          <motion.form
+            initial={{ opacity: 0 }}
+            animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : 800 }}
+            transition={{ duration: 0.9 }}
             onSubmit={handleSubmit}
             className={`flex flex-col w-full ${classes.form} rounded-t-none  py-8 px-4 md:p-8 lg:rounded-l-none lg:rounded-lg gap-4`}
           >
@@ -149,8 +164,8 @@ const ContactLayout = () => {
                 {loading ? "Loading..." : "Submit"}
               </button>
             </div>
-          </form>
-        </div>
+          </motion.form>
+        </motion.div>
       </div>
       {alert && !serverError && (
         <>

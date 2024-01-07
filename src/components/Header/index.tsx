@@ -3,7 +3,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { FiGithub } from "react-icons/fi";
 import menu from "../../assets/menu.svg";
 import close from "../../assets/close.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useFirebaseAuth } from "../../hooks/useFirebaseAuth";
 import { useAlert } from "../../hooks/useAlert";
 import { Links } from "../../interface";
@@ -13,7 +13,30 @@ const Header = () => {
   const { showAlert, AlertComponent } = useAlert();
   const [imageLoaded, setImageLoaded] = useState(false);
   const [showList, setShowList] = useState(false);
+  const [scrollYEnd, setScrollYEnd] = useState(0);
+  const [show, setShow] = useState("top");
   const location = useLocation();
+
+  const HeaderController = () => {
+    if (window.scrollY > 200) {
+      if (window.scrollY > scrollYEnd) {
+        setShow("hide");
+      } else {
+        setShow("show");
+      }
+      setScrollYEnd(window.scrollY);
+    } else {
+      setShow("top");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", HeaderController);
+    return () => {
+      window.removeEventListener("scroll", HeaderController);
+    };
+  }, [scrollYEnd]);
+
   const handlemenuClick = () => {
     setShowList(!showList);
   };
@@ -43,7 +66,11 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full mb-8 px-4 md:px-8 py-4">
+    <header
+      className={`header w-full px-4 md:px-8 py-4 ${
+        location.pathname === "/" && `fixed top-0 ${show}`
+      }`}
+    >
       <div className="flex justify-between items-center max-w-2xl sm:px-5 lg:max-w-7xl mx-auto">
         <Link
           to="/"

@@ -6,15 +6,15 @@ import { CardObject } from "../../interface";
 
 export const cards: CardObject[] = [
   {
-    card: { image: backendImage, title: "Javascript" },
+    card: { image: backendImage, title: "Javascript", transitionDelay: 0 },
   },
   {
-    card: { image: webImage, title: "Typescript" },
+    card: { image: webImage, title: "Typescript", transitionDelay: 1 },
   },
   {
-    card: { image: creatorImage, title: "React.JS" },
+    card: { image: creatorImage, title: "React.JS", transitionDelay: 2 },
   },
   {
-    card: { image: mobileImage, title: "Next.JS" },
+    card: { image: mobileImage, title: "Next.JS", transitionDelay: 3 },
   },
 ];

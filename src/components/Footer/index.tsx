@@ -1,22 +1,23 @@
+import { useRef } from "react";
 import classes from "./index.module.scss";
 import { Link } from "react-router-dom";
 import { footerContent } from "../../constants";
 import { useFirebaseAuth } from "../../hooks/useFirebaseAuth";
 import resume from "../../assets/resume.pdf";
+import { useInView, motion } from "framer-motion";
 const Footer = () => {
   const { user } = useFirebaseAuth();
+  const footerRef = useRef(null);
+  const isInView = useInView(footerRef);
   return (
-    <section className="w-full mt-16 px-4 md:px-8 py-4">
+    <footer ref={footerRef} className="w-full mt-16 px-4 md:px-8 py-4">
       <div className="flex flex-col max-w-2xl sm:px-5 lg:max-w-7xl mx-auto">
-        {/* <div className="mb-8">
-          <Link
-            to="/"
-            className={`text-4xl md:text-6xl linearTitle flex items-center gap-3`}
-          >
-            <span className={classes.name}>EH</span>
-          </Link>
-        </div> */}
-        <div className="flex justify-between flex-wrap gap-8">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -90 }}
+          transition={{ duration: 0.9 }}
+          className="flex justify-between flex-wrap gap-8"
+        >
           <div className="flex-shrink-0 w-full sm:w-2/6 lg:w-2/5">
             <div>
               <h3 className="text-3xl mb-4 md:mb-6 font-bold">Contact</h3>
@@ -109,12 +110,12 @@ const Footer = () => {
               </>
             )}
           </div>
-        </div>
+        </motion.div>
         <p className="text-center mt-8 text-base text-gray-400">
           &copy; {new Date().getFullYear()} Eslam Hafez. All rights reserved.
         </p>
       </div>
-    </section>
+    </footer>
   );
 };
 
