@@ -24,7 +24,7 @@ const ProjectsLayout = () => {
   return (
     <section
       ref={projectsRef}
-      className={` w-full mb-16 mt-16 relative overflow-hidden`}
+      className={` w-full mb-16 mt-16 relative overflow-hidden z-10`}
     >
       <motion.div
         initial={{ opacity: 0 }}
