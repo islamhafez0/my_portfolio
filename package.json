@@ -23,7 +23,8 @@
     "react-image": "^4.1.0",
     "react-lazy-load-image-component": "^1.6.0",
     "react-router-dom": "^6.21.0",
-    "sweetalert2": "^11.10.2"
+    "sweetalert2": "^11.10.2",
+    "vite-plugin-pwa": "^0.17.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

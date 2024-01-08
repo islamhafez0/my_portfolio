@@ -7,7 +7,7 @@ import ScrollProgress from "../ScrollProgress";
 
 const ContentWrapper = () => {
   return (
-    <main>
+    <main className="mt-[100px]">
       <Hero />
       <AboutPage />
       <SkillsPage />

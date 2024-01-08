@@ -33,7 +33,7 @@ const Hero = () => {
   return (
     <section
       ref={heroRef}
-      className="w-full mt-[100px]  mb-8 px-4 md:px-8 py-4 overflow-hidden"
+      className="w-full mb-8 px-4 md:px-8 py-4 overflow-hidden"
     >
       <motion.div
         initial={{ opacity: 0 }}
