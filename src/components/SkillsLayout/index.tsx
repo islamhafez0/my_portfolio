@@ -64,7 +64,7 @@ const SkillsLayout = () => {
       <div className="flex flex-col max-w-2xl sm:px-5 lg:max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 90 }}
+          animate={{ opacity: isInView ? 1 : 0 }}
           transition={{ duration: 0.7 }}
           className="text-center"
         >
@@ -78,8 +78,8 @@ const SkillsLayout = () => {
         <div className="w-full flex justify-center mt-6">
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : 400 }}
-            transition={{ duration: 0.7 }}
+            animate={{ opacity: isInView ? 1 : 0 }}
+            transition={{ duration: 0.5 }}
             className="flex items-center justify-center flex-wrap w-full max-w-[600px] lg:max-w-[800px] gap-4"
           >
             {skills.map((skill, index) => {

@@ -37,8 +37,8 @@ const Hero = () => {
     >
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : 800 }}
-        transition={{ duration: 0.7 }}
+        animate={{ opacity: isInView ? 1 : 0 }}
+        transition={{ duration: 0.5 }}
         exit={{ opacity: 0 }}
         className="flex flex-col justify-center items-center max-w-2xl sm:px-5 lg:max-w-7xl mx-auto relative"
       >

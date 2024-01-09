@@ -29,7 +29,7 @@ const ProjectsLayout = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: isInView ? 1 : 0 }}
-        transition={{ duration: 0.7, delay: 0.4 }}
+        transition={{ duration: 0.5 }}
         className="pb-16 pt-16 px-4 md:px-8 py-4 flex flex-col max-w-2xl sm:px-5 lg:max-w-7xl mx-auto"
         style={{
           backgroundImage: `url(${banner})`,
@@ -48,14 +48,11 @@ const ProjectsLayout = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4 lg:gap-12 place-items-center mt-16">
-          {displayedProjects.map((project, index) => {
+          {displayedProjects.map((project) => {
             return (
-              <motion.div
+              <div
                 className={`${classes.box} rounded-md overflow-hidden relative w-full max-w-[370px]`}
                 key={project.slug}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : 350 }}
-                transition={{ duration: 0.5, delay: 0.4 + index * 0.4 }}
               >
                 <Link to={`/pages/projects/${project.slug}`}>
                   <LazyLoadImage
@@ -84,17 +81,12 @@ const ProjectsLayout = () => {
                     <FiGithub size={24} />
                   </div>
                 </Link>
-              </motion.div>
+              </div>
             );
           })}
         </div>
         {!isProjectsPage && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 350 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
-            className="flex items-center justify-center mt-12"
-          >
+          <div className="flex items-center justify-center mt-12">
             <Link
               to="/pages/projects"
               className={`btnPrimary flex gap-2 items-center px-10 py-3 bg-gray-200 text-black font-medium rounded-full`}
@@ -102,7 +94,7 @@ const ProjectsLayout = () => {
               <IoFlashOutline size={24} />
               <p className="text-[18px]">view all</p>
             </Link>
-          </motion.div>
+          </div>
         )}
       </motion.div>
     </section>

@@ -14,8 +14,8 @@ const Footer = () => {
       <div className="flex flex-col max-w-2xl sm:px-5 lg:max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -90 }}
-          transition={{ duration: 0.9 }}
+          animate={{ opacity: isInView ? 1 : 0 }}
+          transition={{ duration: 0.5 }}
           className="flex justify-between flex-wrap gap-8"
         >
           <div className="flex-shrink-0 w-full sm:w-2/6 lg:w-2/5">
