@@ -75,7 +75,6 @@ const AboutLayout = () => {
             );
           })}
         </div>
-        {isAboutPage && <div>Education</div>}
       </motion.div>
     </section>
   );

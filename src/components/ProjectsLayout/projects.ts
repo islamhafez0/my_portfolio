@@ -28,7 +28,7 @@ export const projects: ProjectTypes[] = [
     description:
       "Developed a cross-platform mobile app showcasing skills in Next.js, React, Typescript, Payload, Scss, and Stripe integration.",
     technologies: ["Next", "React", "Typescript", "Payload", "Scss", "Stripe"],
-    github: "https://github.com/islamhafez0/BookFinderDemo",
+    github: "https://github.com/islamhafez0/e-commerce",
   },
   {
     slug: "movies-project",
@@ -46,7 +46,7 @@ export const projects: ProjectTypes[] = [
     title: "Book Finder",
     description:
       "Discover your next favorite book with this responsive website built using React and JavaScript. Utilizing the Open Library API, it provides real-time updates, allowing you to explore a vast collection of books. Experience a user-friendly interface for seamless book searching and find your next literary adventure.",
-    technologies: ["React", "JavaScript", "Css"],
+    technologies: ["React", "JavaScript", "Css", "Open-Library-API"],
     github: "https://github.com/islamhafez0/BookFinderDemo",
     demo: "https://book-finder-demo-e007b.web.app/",
   },
