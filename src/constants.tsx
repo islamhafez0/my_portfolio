@@ -144,6 +144,11 @@ export const certificateItemsDetails: ICertificateItemsDetails[] = [
     link: "https://coursera.org/share/1641f7bab87270956576c645ccbd2bcc",
   },
   {
+    name: "Programming With Javascript",
+    subname: "Meta",
+    link: "https://coursera.org/share/63c15f3b5306ec64b756e597bc0e2d58",
+  },
+  {
     name: "Web Design for Everybody  Specialization",
     subname: "University of Michigan",
     link: "https://coursera.org/share/f8b23633019ce544dab748481de391ea",

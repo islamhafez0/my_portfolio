@@ -102,7 +102,7 @@ button {
 .header {
   transform: translateY(0);
   transition: all ease 0.5s;
-  z-index: 10;
+  z-index: 50;
   &.top {
     backdrop-filter: blur(4.5px);
     -webkit-backdrop-filter: blur(3.5px);

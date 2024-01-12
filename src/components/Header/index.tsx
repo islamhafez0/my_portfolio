@@ -68,8 +68,8 @@ const Header = () => {
   return (
     <header
       className={`header w-full px-4 md:px-8 py-4 ${
-        location.pathname === "/" && `fixed top-0 ${show}`
-      }`}
+        location.pathname.includes("/projects") && "relative"
+      } ${location.pathname === "/" && `fixed top-0 ${show}`}`}
     >
       <div className="flex justify-between items-center max-w-2xl sm:px-5 lg:max-w-7xl mx-auto">
         <Link
