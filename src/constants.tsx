@@ -141,7 +141,7 @@ export const certificateItemsDetails: ICertificateItemsDetails[] = [
   {
     name: "English for Career Development",
     subname: "University of Pennsylvania",
-    link: "https://coursera.org/share/1641f7bab87270956576c645ccbd2bcc",
+    link: "https://coursera.org/share/027103156f06659f81e359782bee7e33",
   },
   {
     name: "Programming With Javascript",
