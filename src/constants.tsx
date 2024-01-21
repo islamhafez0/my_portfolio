@@ -173,4 +173,9 @@ export const certificateItemsDetails: ICertificateItemsDetails[] = [
     subname: "Udemy",
     link: "https://www.udemy.com/share/1042GK3@m7a2B24pW9yi7MCATluCsQreHIn6vywDbp5OvBHHK7VbI6bFStEpeg7TvBn7waLzOA==/",
   },
+  {
+    name: "Search Engine Optimization (SEO) with Squarespace",
+    subname: "Coursera Project Network",
+    link: "https://coursera.org/share/7dfba90717c368b6e250db1e1296ed35",
+  },
 ];
