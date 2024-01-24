@@ -1,11 +1,9 @@
-import classes from "./index.module.scss";
 import { Link, useLocation } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { cards } from "./about";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import AboutCard from "../AboutCard";
 const AboutLayout = () => {
-  const [imageLoaded, setImageLoaded] = useState(false);
   const location = useLocation();
   const isAboutPage = location.pathname === "/pages/about";
   const aboutRef = useRef<null>(null);
@@ -51,28 +49,7 @@ const AboutLayout = () => {
         </div>
         <div className="flex flex-col md:flex-row flex-wrap gap-4 lg:gap-6 justify-center mt-8 md:mt-16">
           {cards.map((card) => {
-            return (
-              <div
-                key={card.card.title}
-                className={`flex flex-col justify-center text-center border border-gray-400 rounded-xl items-center cardGradient w-full  md:w-2/5 lg:w-1/5 h-[250px] px-2 transition-all duration-75 ${classes.aboutCard}`}
-              >
-                <div>
-                  <LazyLoadImage
-                    className="w-16 h-16 object-cover"
-                    src={card.card.image}
-                    alt={card.card.title}
-                    placeholderSrc={card.card.image}
-                    effect={imageLoaded ? undefined : "blur"}
-                    onLoad={() => setImageLoaded(true)}
-                  />
-                </div>
-                <div>
-                  <p className="text-[19px] mt-6 font-bold">
-                    {card.card.title}
-                  </p>
-                </div>
-              </div>
-            );
+            return <AboutCard key={card.card.title} card={card} />;
           })}
         </div>
       </motion.div>
