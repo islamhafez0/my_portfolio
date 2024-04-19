@@ -7,10 +7,6 @@ import p2_1 from "../../assets/projects/p2_1.jpg";
 import p2_2 from "../../assets/projects/p2_2.jpg";
 import p2_3 from "../../assets/projects/p2_3.jpg";
 
-import p3_1 from "../../assets/projects/p3_1.webp";
-import p3_2 from "../../assets/projects/p3_2.png";
-import p3_3 from "../../assets/projects/p3_3.png";
-
 import p4_1 from "../../assets/projects/p4_1.png";
 import p6_1 from "../../assets/projects/p6_1.png";
 import p7_1 from "../../assets/projects/p7_1.webp";
@@ -20,35 +16,39 @@ import p8_2 from "../../assets/projects/p8_2.webp";
 import p8_3 from "../../assets/projects/p8_3.webp";
 
 import p9_1 from "../../assets/projects/p9_1.png";
+import geminiProject from "../../assets/projects/gemini-project.png";
+import githubProject from "../../assets/projects/github-project.png";
+import docsProject from "../../assets/projects//docs-project.png"
+import docsProjectI2 from "../../assets/projects//docs-project2.png"
 export const projects: ProjectTypes[] = [
+  {
+    slug: "gemini-clone",
+    images: [geminiProject],
+    title: "Gemini Clone",
+    description:
+      "A chat application built with React that allows users to interact with a chatbot. Users can input messages, send requests to the chatbot, and receive formatted responses. The application features a sidebar toggle for navigation and dynamic content display.",
+    technologies: ["React", "Typescript", "CSS", "Google Gemini API", "Firebase", "Auth System"],
+    github: "https://github.com/islamhafez0/gemini-clone",
+    demo: "https://gemini-clone-9c740.web.app/",
+  },
+  {
+    slug: "github-finder",
+    images: [githubProject],
+    title: "Github Finder",
+    description:
+      "GitHub Finder is a React-based web app for exploring GitHub profiles and trending repositories. It securely authenticates requests to the GitHub API, providing detailed user information and trending projects.",
+    technologies: ["React", "Typescript", "Github API", "CSS"],
+    github: "https://github.com/islamhafez0/MoviesDemo",
+    demo: "https://movies-app-a67a7.web.app/",
+  },
   {
     slug: "ecommerce-cms",
     images: [p8_1, p8_2, p8_3],
     title: "Ecommerce CMS",
     description:
       "Developed a cross-platform mobile app showcasing skills in Next.js, React, Typescript, Payload, Scss, and Stripe integration.",
-    technologies: ["Next", "React", "Typescript", "Payload", "Scss", "Stripe"],
+    technologies: ["Next.js", "Typescript", "Payload", "Sass", "Stripe"],
     github: "https://github.com/islamhafez0/e-commerce",
-  },
-  {
-    slug: "movies-project",
-    images: [p3_1, p3_2, p3_3],
-    title: "Movies Website",
-    description:
-      "Crafted an interactive multimedia project demonstrating creativity and innovation using React, Redux, JavaScript, and TMDB API.",
-    technologies: ["React", "Redux", "JavaScript", "TMDB-API", "Scss"],
-    github: "https://github.com/islamhafez0/MoviesDemo",
-    demo: "https://movies-app-a67a7.web.app/",
-  },
-  {
-    slug: "book-finder",
-    images: [p7_1],
-    title: "Book Finder",
-    description:
-      "Discover your next favorite book with this responsive website built using React and JavaScript. Utilizing the Open Library API, it provides real-time updates, allowing you to explore a vast collection of books. Experience a user-friendly interface for seamless book searching and find your next literary adventure.",
-    technologies: ["React", "JavaScript", "Css", "Open-Library-API"],
-    github: "https://github.com/islamhafez0/BookFinderDemo",
-    demo: "https://book-finder-demo-e007b.web.app/",
   },
   {
     slug: "dynamic-responsive-ecommerce",
@@ -59,6 +59,25 @@ export const projects: ProjectTypes[] = [
     technologies: ["Next.js", "Typescript", "Stripe", "Sanity", "Tailwind"],
     github: "https://github.com/islamhafez0/ecommerce-website",
     demo: "https://ecommerce-website-five-flax.vercel.app/",
+  },
+  {
+    slug: "google-docs-clone",
+    images: [docsProject, docsProjectI2],
+    title: "Google Docs CLone",
+    description:
+      "Developed a real-time collaborative document editing platform inspired by Google Docs. Implemented with Socket.io for real-time communication, MongoDB for data storage, and React for the frontend. Users can create, edit, and collaborate on documents seamlessly.",
+    technologies: ["React", "Socket.io", "MongoDB", "Quill"],
+    github: "https://github.com/islamhafez0/googleDocsClone",
+  },
+  {
+    slug: "book-finder",
+    images: [p7_1],
+    title: "Book Finder",
+    description:
+      "Discover your next favorite book with this responsive website built using React and JavaScript. Utilizing the Open Library API, it provides real-time updates, allowing you to explore a vast collection of books. Experience a user-friendly interface for seamless book searching and find your next literary adventure.",
+    technologies: ["React", "JavaScript", "Css", "Open-Library-API"],
+    github: "https://github.com/islamhafez0/BookFinderDemo",
+    demo: "https://book-finder-demo-e007b.web.app/",
   },
   {
     slug: "budget-app",

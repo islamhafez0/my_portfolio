@@ -37,7 +37,7 @@ const Footer = () => {
                 return (
                   <a
                     key={ele.href}
-                    className={`${classes.sociaIcon} transition-all linearBg text-white w-10 h-10 grid place-content-center rounded-full`}
+                    className={`${classes.socialIcon} transition-all text-white w-10 h-10 grid place-content-center rounded-full`}
                     href={ele.href}
                     target="_blank"
                     aria-label={`visit ${ele.href}`}
@@ -96,13 +96,13 @@ const Footer = () => {
             ) : (
               <>
                 <Link
-                  className={`${classes.sociaIcon} linearBg w-32 h-10 flex items-center justify-center rounded-sm`}
+                  className={`${classes.auth_btns} linearBg w-32 h-10 flex items-center justify-center rounded-sm`}
                   to="/auth/login"
                 >
                   Login
                 </Link>
                 <Link
-                  className={`${classes.sociaIcon} linearBg w-32 h-10 flex items-center justify-center rounded-sm`}
+                  className={`${classes.auth_btns} linearBg w-32 h-10 flex items-center justify-center rounded-sm`}
                   to="/auth/create-account"
                 >
                   Create Account

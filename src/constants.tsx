@@ -4,11 +4,8 @@ import {
   IFormProps,
   IpersonalItemsDetails,
 } from "./interface";
-import { FaXTwitter } from "react-icons/fa6";
-
-import { IoLogoWhatsapp } from "react-icons/io";
+import { FaThreads, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
 
 export const ContactFormInputs: IFormProps[] = [
   {
@@ -35,7 +32,7 @@ export const footerContent: IFooterProps = {
   contact: {
     Email: "moeslam843@gmail.com",
     Phone: "+20 1097423297",
-    Address: "Egypt, Itay Elbaroud",
+    Address: "Egypt, Beheira, Itay Elbaroud",
   },
   pages: {
     profile: "/info/profile/me",
@@ -47,17 +44,17 @@ export const footerContent: IFooterProps = {
       href: "https://twitter.com/eslamhafez72",
       icon: <FaXTwitter size={24} />,
     },
-    whatsapp: {
-      href: "https://wa.me/+201097423297",
-      icon: <IoLogoWhatsapp size={24} />,
+    thread: {
+      href: "https://github.com/islamhafez0",
+      icon: <FaThreads size={24} />,
     },
     linkedin: {
       href: "https://www.linkedin.com/in/islam-hafez-103902246/",
       icon: <FaLinkedin size={24} />,
     },
-    github: {
-      href: "https://github.com/islamhafez0",
-      icon: <FaGithub size={24} />,
+    whatsapp: {
+      href: "https://wa.me/+201097423297",
+      icon: <FaWhatsapp size={24} />,
     },
   },
   quickLinks: {

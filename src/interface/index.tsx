@@ -106,7 +106,7 @@ export type IFooterProps = {
     twitter: SocialLink;
     whatsapp: SocialLink;
     linkedin: SocialLink;
-    github: SocialLink;
+    thread: SocialLink;
   };
   quickLinks: {
     resume: string;
