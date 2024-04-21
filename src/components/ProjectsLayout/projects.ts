@@ -38,8 +38,8 @@ export const projects: ProjectTypes[] = [
     description:
       "GitHub Finder is a React-based web app for exploring GitHub profiles and trending repositories. It securely authenticates requests to the GitHub API, providing detailed user information and trending projects.",
     technologies: ["React", "Typescript", "Github API", "CSS"],
-    github: "https://github.com/islamhafez0/MoviesDemo",
-    demo: "https://movies-app-a67a7.web.app/",
+    github: "https://github.com/islamhafez0/github-finder",
+    demo: "https://github-finder-six-chi-12.vercel.app/",
   },
   {
     slug: "ecommerce-cms",
