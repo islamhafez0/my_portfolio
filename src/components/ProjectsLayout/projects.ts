@@ -15,7 +15,10 @@ import p8_1 from "../../assets/projects/p8_1.webp";
 import p8_2 from "../../assets/projects/p8_2.webp";
 import p8_3 from "../../assets/projects/p8_3.webp";
 
+
 import p9_1 from "../../assets/projects/p9_1.png";
+import cozaStoreProject from "../../assets/projects/coza-store-project.png";
+
 import geminiProject from "../../assets/projects/gemini-project.png";
 import githubProject from "../../assets/projects/github-project.png";
 import docsProject from "../../assets/projects//docs-project.png"
@@ -68,6 +71,16 @@ export const projects: ProjectTypes[] = [
       "Developed a real-time collaborative document editing platform inspired by Google Docs. Implemented with Socket.io for real-time communication, MongoDB for data storage, and React for the frontend. Users can create, edit, and collaborate on documents seamlessly.",
     technologies: ["React", "Socket.io", "MongoDB", "Quill"],
     github: "https://github.com/islamhafez0/googleDocsClone",
+  },
+  {
+    slug: "static-coza-store",
+    images: [cozaStoreProject],
+    title: "Coza Store",
+    description:
+      "A static store website showing skills in beautiful design and responsive design.",
+    technologies: ["HTML", "CSS", "JavaScript", "RWD"],
+    github: "https://github.com/islamhafez0/static-coza-store",
+    demo: "https://static-coza-store.vercel.app/",
   },
   {
     slug: "book-finder",
