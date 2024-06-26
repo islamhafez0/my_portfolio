@@ -43,18 +43,22 @@ export const footerContent: IFooterProps = {
     twitter: {
       href: "https://twitter.com/eslamhafez72",
       icon: <FaXTwitter size={24} />,
+      aria_label: "Twitter"
     },
     thread: {
       href: "https://github.com/islamhafez0",
       icon: <FaThreads size={24} />,
+      aria_label: "Thread",
     },
     linkedin: {
       href: "https://www.linkedin.com/in/islam-hafez-103902246/",
       icon: <FaLinkedin size={24} />,
+      aria_label: "Linkedin",
     },
     whatsapp: {
       href: "https://wa.me/+201097423297",
       icon: <FaWhatsapp size={24} />,
+      aria_label: "Whatsapp"
     },
   },
   quickLinks: {

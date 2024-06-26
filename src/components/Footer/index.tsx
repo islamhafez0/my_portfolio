@@ -33,16 +33,16 @@ const Footer = () => {
               </ul>
             </div>
             <div className="flex mt-6 gap-4">
-              {Object.values(footerContent.socialLinks).map((ele) => {
+              {Object.values(footerContent.socialLinks).map(({ aria_label, href, icon }) => {
                 return (
                   <a
-                    key={ele.href}
+                    key={href}
                     className={`${classes.socialIcon} transition-all text-white w-10 h-10 grid place-content-center rounded-full`}
-                    href={ele.href}
+                    href={href}
                     target="_blank"
-                    aria-label={`visit ${ele.href}`}
+                    aria-label={aria_label}
                   >
-                    {ele.icon}
+                    {icon}
                   </a>
                 );
               })}

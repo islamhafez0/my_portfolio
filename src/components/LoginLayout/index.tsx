@@ -29,6 +29,7 @@ const LoginLayout = () => {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if(Object.values(userDate).some(value => value === "")) return
     const successLogin = await signin(userDate);
     if (successLogin) {
       setUserData({

@@ -89,6 +89,7 @@ export interface IUser {
 type SocialLink = {
   href: string;
   icon: ReactNode;
+  aria_label: string
 };
 
 export type IFooterProps = {

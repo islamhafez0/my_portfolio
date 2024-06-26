@@ -96,13 +96,16 @@ const Header = () => {
               </li>
             );
           })}
+          <li>
           <a
+            aria-label="github"
             href="https://github.com/islamhafez0"
             target="_blank"
             className="bg-gray-100 hover:bg-black hover:text-gray-100 hover:border transition-all text-black w-10 h-10 rounded-full grid place-content-center"
           >
             <FiGithub size={22} />
           </a>
+          </li>
         </ul>
         <div className="menu md:hidden gap-4 relative">
           <div>
