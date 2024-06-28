@@ -1,26 +1,28 @@
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Skills } from "../../interface";
-import cssImage from "../../assets/tech/css.png";
-import figmaImage from "../../assets/tech/figma.png";
-import gitImage from "../../assets/tech/git.png";
-import htmlImage from "../../assets/tech/html.png";
-import javascriptImage from "../../assets/tech/javascript.png";
-import typescriptImage from "../../assets/tech/typescript.png";
-import reactjsImage from "../../assets/tech/reactjs.png";
-import tailwindImage from "../../assets/tech/tailwind.png";
-import reduxImage from "../../assets/tech/redux.png";
-import apiImage from "../../assets/tech/api.png";
-import nodejsImage from "../../assets/tech/nodejs.png";
-import scssImage from "../../assets/tech/scss.webp";
-import bootstrapImage from "../../assets/tech/bootstrap.webp";
-import firebaseImage from "../../assets/tech/firebase.png";
-import nextImage from "../../assets/tech/next.png";
-import materialUiImage from "../../assets/tech/material-ui.png";
-
+import {
+  htmlImage,
+  cssImage,
+  javascriptImage,
+  typescriptImage,
+  reactjsImage,
+  nextImage,
+  firebaseImage,
+  bootstrapImage,
+  tailwindImage,
+  materialUiImage,
+  scssImage,
+  gitImage,
+  reduxImage,
+  figmaImage,
+  apiImage,
+  nodejsImage,
+  mongodbImage,
+} from "../../assets/tech";
+import { motion, useInView } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { MdOutlineOpenInNew } from "react-icons/md";
 import { Link, useLocation } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import { useEffect, useMemo, useRef, useState } from "react";
-import { motion, useInView } from "framer-motion";
 
 const SkillsLayout = () => {
   const skills: Skills[] = useMemo(
@@ -41,6 +43,7 @@ const SkillsLayout = () => {
       { src: figmaImage, name: "figma" },
       { src: apiImage, name: "deal with api" },
       { src: nodejsImage, name: "nodejs" },
+      { src: mongodbImage, name: "mongodb" },
     ],
     []
   );

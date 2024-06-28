@@ -1,0 +1,17 @@
+export {default as cssImage} from "./css.png";
+export {default as figmaImage} from "./figma.png";
+export {default as gitImage} from "./git.png";
+export {default as htmlImage} from "./html.png";
+export {default as javascriptImage} from "./javascript.png";
+export {default as typescriptImage} from "./typescript.png";
+export {default as reactjsImage} from "./reactjs.png";
+export {default as tailwindImage} from "./tailwind.png";
+export {default as reduxImage} from "./redux.png";
+export {default as apiImage} from "./api.png";
+export {default as nodejsImage} from "./nodejs.png";
+export {default as scssImage} from "./scss.webp";
+export {default as bootstrapImage} from "./bootstrap.webp";
+export {default as firebaseImage} from "./firebase.png";
+export {default as nextImage} from "./next.png";
+export {default as materialUiImage} from "./material-ui.png";
+export {default as mongodbImage} from "./mongodb.png"
