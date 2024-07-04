@@ -23,7 +23,19 @@ import geminiProject from "../../assets/projects/gemini-project.png";
 import githubProject from "../../assets/projects/github-project.png";
 import docsProject from "../../assets/projects//docs-project.png"
 import docsProjectI2 from "../../assets/projects//docs-project2.png"
+import chatAop from "../../assets/projects/chat-app.png"
+
 export const projects: ProjectTypes[] = [
+  {
+    slug: "chat-app",
+    images: [chatAop],
+    title: "Public Chat App",
+    description:
+      "A simple public chat application built using React and Firebase Firestore. Users can send and receive messages in real-time with a clean and user-friendly interface.",
+    technologies: ["React", "Typescript", "Firebase", "Firestore", "Auth System", "CSS", "RWD", "PWA"],
+    github: "https://github.com/islamhafez0/chat-app",
+    demo: "https://chat-app-557fc.web.app/",
+  },
   {
     slug: "gemini-clone",
     images: [geminiProject],
