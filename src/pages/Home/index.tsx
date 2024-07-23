@@ -1,4 +1,4 @@
-import ContentWrapper from "../../components/ContentWrapper";
+import { ContentWrapper } from "../../components";
 
 const Home = () => {
   return <ContentWrapper />;

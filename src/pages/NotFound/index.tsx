@@ -1,4 +1,4 @@
-import NotFoundLayout from "../../components/404Layout";
+import { NotFoundLayout } from "../../components";
 
 const NotFound = () => {
   return <NotFoundLayout />;

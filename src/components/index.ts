@@ -1,8 +1,10 @@
-import Header from "./Header";
-import Stars from "./Stars";
-import Footer from "./Footer";
-import ProjectLayout from "./ProjectLayout";
-import Logout from "./Logout";
-import ProfileLayout from "./Profile";
-
-export { Header, Stars, Footer, ProjectLayout, Logout, ProfileLayout };
+export { Header } from "./shared/Header"
+export { Stars } from "./shared/Stars"
+export { Footer } from "./shared/Footer"
+export { ProjectLayout } from "./layouts/ProjectLayout";
+export { ProfileLayout } from "./shared/Profile";
+export { NotFoundLayout } from "./layouts/404Layout";
+export { BlogLayout } from "./layouts/BlogLayout";
+export { ContentWrapper } from "./shared/ContentWrapper";
+export { ProjectsLayout } from "./layouts/ProjectsLayout";
+export { ScrollToTop } from "./common/ScrollToTop";

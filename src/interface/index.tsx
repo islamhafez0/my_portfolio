@@ -1,4 +1,3 @@
-import { User } from "firebase/auth";
 import { ReactNode } from "react";
 
 export type Links = {
@@ -37,16 +36,10 @@ export type ContactFormData = {
   message: string;
 };
 
-export type FetcherContextProps = {
+export type ContactContextProps = {
   handleFormSubmition: (formData: ContactFormData) => Promise<void>;
   loading: boolean;
   serverError: null;
-  // fetchProjects: () => Promise<void>;
-  // fetchProject: (slug: string) => Promise<void>;
-  // projects: ProjectTypes[];
-  // project: ProjectTypes | null;
-  // fetchError: null | any;
-  // dataLoading: boolean;
 };
 
 export type TUserContactData = {
@@ -61,35 +54,10 @@ export type IFormProps = {
   name: keyof TUserContactData;
 };
 
-export interface IFirebaseAuthContextProps {
-  signup: (data: {
-    email: string;
-    password: string;
-    displayName: string;
-  }) => Promise<boolean>;
-  signin: (data: { email: string; password: string }) => Promise<boolean>;
-  logout: () => Promise<void>;
-  signinWithGoogle: () => Promise<any>;
-  signinWithGithub: () => Promise<any>;
-  signinWithTwitter: () => Promise<any>;
-  error: null;
-  firebaseLoading: boolean;
-  user: User | null;
-  isAuth: boolean;
-  setError: React.Dispatch<React.SetStateAction<string | null>>;
-}
-
-export interface IUser {
-  displayName: string | null;
-  email: string;
-  photoURL?: string;
-  phoneNumber?: number | null;
-}
-
 type SocialLink = {
   href: string;
   icon: ReactNode;
-  aria_label: string
+  aria_label: string;
 };
 
 export type IFooterProps = {
@@ -110,34 +78,10 @@ export type IFooterProps = {
     thread: SocialLink;
   };
   quickLinks: {
-    resume: string;
-    eslamhafez7: string;
-    islamhafez0: string;
+    blog: string;
+    profile: string;
+    projects: string;
   };
-};
-
-export type TUserCreateAccountData = {
-  displayName: string;
-  email: string;
-  password: string;
-};
-export type TCreateAccountInputProps = {
-  type: string;
-  name: keyof TUserCreateAccountData;
-  id: string;
-  label: string;
-};
-
-type TUserLoginData = {
-  email: string;
-  password: string;
-};
-
-export type TLoginAccountPops = {
-  type: string;
-  name: keyof TUserLoginData;
-  id: string;
-  label: string;
 };
 
 export interface CustomLazyLoadImageProps {
@@ -161,8 +105,3 @@ export interface ILinkItemsDetails {
   alt: string;
   link: string;
 }
-export type IntersectionTypes = {
-  inView: boolean;
-  observe: (target: Element) => void;
-  unobserve: (target: Element) => void;
-};

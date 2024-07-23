@@ -1,4 +1,4 @@
-import ProjectsLayout from "../../components/ProjectsLayout";
+import { ProjectsLayout } from "../../components";
 const ProjectsPage = () => {
   return <ProjectsLayout />;
 };

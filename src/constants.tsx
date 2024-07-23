@@ -3,9 +3,18 @@ import {
   IFooterProps,
   IFormProps,
   IpersonalItemsDetails,
+  Links,
 } from "./interface";
-import { FaThreads, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
+import { FaWhatsapp, FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
+
+export const navLinks: Links[] = [
+  { name: "Home", href: "/" },
+  { name: "Projects", href: "/pages/projects" },
+  { name: "Profile", href: "/info/profile/me" },
+  { name: "Blog", href: "/pages/blog" },
+];
 
 export const ContactFormInputs: IFormProps[] = [
   {
@@ -43,11 +52,11 @@ export const footerContent: IFooterProps = {
     twitter: {
       href: "https://twitter.com/eslamhafez72",
       icon: <FaXTwitter size={24} />,
-      aria_label: "Twitter"
+      aria_label: "Twitter",
     },
     thread: {
       href: "https://github.com/islamhafez0",
-      icon: <FaThreads size={24} />,
+      icon: <FiGithub size={24} />,
       aria_label: "Thread",
     },
     linkedin: {
@@ -58,13 +67,13 @@ export const footerContent: IFooterProps = {
     whatsapp: {
       href: "https://wa.me/+201097423297",
       icon: <FaWhatsapp size={24} />,
-      aria_label: "Whatsapp"
+      aria_label: "Whatsapp",
     },
   },
   quickLinks: {
-    resume: "../../assets/resume.pdf",
-    islamhafez0: "https://github.com/islamhafez0",
-    eslamhafez7: "https://github.com/eslamhafez7",
+    blog: "/pages/blog",
+    profile: "/info/profile/me",
+    projects: "/pages/projects",
   },
 };
 
@@ -180,3 +189,81 @@ export const certificateItemsDetails: ICertificateItemsDetails[] = [
     link: "https://coursera.org/share/7dfba90717c368b6e250db1e1296ed35",
   },
 ];
+
+export const markdownContent = `# Meet Eslam Hafez: Frontend Developer
+
+Greetings! I'm **Eslam Hafez**, a frontend developer passionate about crafting exceptional user interfaces and creating memorable digital experiences. My journey in web development has equipped me with the skills to bring ideas to life through clean and efficient code.
+
+## Education
+
+- **English Language and Translation** - Damnhour University's Faculty of Arts
+
+## Courses
+
+- **Technical Support Fundamentals** - Coursera
+- **English for Career Development** - Coursera
+- **Interpersonal Skills Course** - Coursera
+- **Web Design for Everybody: Basics of Web Development & Coding Specialization** - Coursera
+- **Hands-on Introduction to Linux Commands and Shell Scripting** - Coursera
+- **JavaScript** - YouTube
+- **React 18 (React, Redux, Hooks, Router, etc.)** - Udemy
+- **Next.js** - YouTube
+- **TypeScript** - YouTube
+
+## Skills
+
+- **JavaScript**
+- **TypeScript**
+- **Nodejs**
+- **MongoDB**
+- **Express**
+- **Next.js**
+- **React.js**
+- **HTML5**
+- **CSS3**
+- **Tailwind CSS**
+- **Firebase**
+- **Appwrite**
+- **Clerk**
+- **SEO**
+- **Git & GitHub**
+
+## Projects
+
+- **Portfolio Website**: Showcases my work and skills
+- **Ecommerce Website**: CMS with Stripe integration
+- **Budget App**: Built with React.js
+- **Movies Website**: Utilizes the TMDB API
+- **Blog Website**: Blogging Nest platform
+- **Book Finder**: Developed with Next.js
+- **Prayer Timings**: Created using React.js
+
+## Professional Strengths
+
+- Quick Learner
+- Collaborative Team Player
+- Self-Taught Enthusiast
+- Adaptable Under Pressure
+
+## Languages
+
+- **Arabic**: Mother Tongue
+- **English**: Intermediate Level
+
+## Summary
+
+I am a passionate frontend developer with a solid foundation in HTML5, CSS3, and JavaScript. I excel at building visually appealing and user-centric web experiences. My expertise in React.js and Next.js allows me to create dynamic and responsive applications, while my knowledge of TypeScript enhances code maintainability and scalability. I'm well-versed in Git & GitHub for version control, which helps foster collaborative development environments. My strengths include quick adaptation to new technologies, effective collaboration within cross-functional teams, and delivering high-quality results under pressure. I am committed to continuous learning and self-improvement, as evidenced by my completion of various courses and keeping up with industry trends.
+
+## Contact
+
+- **Email**: moeslam843@gmail.com
+- **Phone**: +20 1097423297
+- **Location**: Egypt, Beheira, Itay Elbaroud
+
+## Connect with Me
+
+- [GitHub](https://github.com/islamhafez0)
+- [LinkedIn](https://www.linkedin.com/in/islam-hafez-103902246/)
+
+Feel free to reach out if you'd like to collaborate or learn more about my work!
+`;

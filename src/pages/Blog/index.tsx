@@ -1,5 +1,4 @@
-import BlogLayout from "../../components/BlogLayout";
-
+import { BlogLayout } from "../../components";
 const Blog = () => {
   return <BlogLayout />;
 };
