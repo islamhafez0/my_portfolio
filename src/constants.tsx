@@ -103,45 +103,46 @@ export const profileNavItems = [
 export const personalItemsDetails: IpersonalItemsDetails[] = [
   {
     itemTitle:
-      "Passionate frontend developer: Crafting exceptional user interfaces and creating memorable digital experiences is my forte.",
+      "Passionate Frontend Developer: I specialize in creating intuitive user interfaces and engaging digital experiences that leave a lasting impression.",
     key: "1",
   },
   {
     itemTitle:
-      "Educational background: Currently pursuing a degree in English Language and Translation at Damnhour University's Faculty of Arts.",
+      "Educational Background: I’m currently studying English Language and Translation at Damnhour University, balancing my love for languages with my passion for coding.",
     key: "2",
   },
   {
     itemTitle:
-      "Continuous learning: Committed to staying abreast of industry trends and enhancing skills through various online courses on platforms like Coursera and Udemy.",
+      "Lifelong Learner: I’m always looking to stay ahead of the curve by taking courses on platforms like Coursera and Udemy, constantly improving my knowledge and skills.",
     key: "3",
   },
   {
     itemTitle:
-      "Technical expertise: Proficient in HTML5, CSS3, and JavaScript with a focus on modern frameworks such as React.js and Next.js.",
+      "Technical Skills: I’m skilled in HTML5, CSS3, and JavaScript, with a strong focus on modern frameworks like React.js and Next.js.",
     key: "4",
   },
   {
     itemTitle:
-      "Versatility in tools: Well-versed in using Git & GitHub for version control, ensuring collaborative and efficient development environments.",
+      "Versatile with Tools: I’m proficient in using Git & GitHub for version control, ensuring smooth and efficient collaboration on projects.",
     key: "5",
   },
   {
     itemTitle:
-      "Adaptable under pressure: Demonstrated strength in quickly adapting to new technologies and delivering high-quality results in challenging scenarios.",
+      "Calm Under Pressure: I excel at adapting to new technologies and delivering high-quality work, even under tight deadlines.",
     key: "6",
   },
   {
     itemTitle:
-      "Languages: Fluent in Arabic (Mother Tongue) and intermediate proficiency in English.",
+      "Language Skills: I’m fluent in Arabic, my native language, and have a good command of English.",
     key: "7",
   },
   {
     itemTitle:
-      "Project Highlights: Successfully developed a Portfolio Website, Ecommerce Website with CMS using Stripe, Budget App with React.js, and more.",
+      "Project Highlights: I’ve successfully developed a range of projects, including a portfolio website, an ecommerce website with CMS integration and Stripe payments, a budget app built with React.js, and more.",
     key: "8",
   },
 ];
+
 export const certificateItemsDetails: ICertificateItemsDetails[] = [
   {
     name: "Technical Support Fundamentals",
@@ -190,80 +191,4 @@ export const certificateItemsDetails: ICertificateItemsDetails[] = [
   },
 ];
 
-export const markdownContent = `# Meet Eslam Hafez: Frontend Developer
-
-Greetings! I'm **Eslam Hafez**, a frontend developer passionate about crafting exceptional user interfaces and creating memorable digital experiences. My journey in web development has equipped me with the skills to bring ideas to life through clean and efficient code.
-
-## Education
-
-- **English Language and Translation** - Damnhour University's Faculty of Arts
-
-## Courses
-
-- **Technical Support Fundamentals** - Coursera
-- **English for Career Development** - Coursera
-- **Interpersonal Skills Course** - Coursera
-- **Web Design for Everybody: Basics of Web Development & Coding Specialization** - Coursera
-- **Hands-on Introduction to Linux Commands and Shell Scripting** - Coursera
-- **JavaScript** - YouTube
-- **React 18 (React, Redux, Hooks, Router, etc.)** - Udemy
-- **Next.js** - YouTube
-- **TypeScript** - YouTube
-
-## Skills
-
-- **JavaScript**
-- **TypeScript**
-- **Nodejs**
-- **MongoDB**
-- **Express**
-- **Next.js**
-- **React.js**
-- **HTML5**
-- **CSS3**
-- **Tailwind CSS**
-- **Firebase**
-- **Appwrite**
-- **Clerk**
-- **SEO**
-- **Git & GitHub**
-
-## Projects
-
-- **Portfolio Website**: Showcases my work and skills
-- **Ecommerce Website**: CMS with Stripe integration
-- **Budget App**: Built with React.js
-- **Movies Website**: Utilizes the TMDB API
-- **Blog Website**: Blogging Nest platform
-- **Book Finder**: Developed with Next.js
-- **Prayer Timings**: Created using React.js
-
-## Professional Strengths
-
-- Quick Learner
-- Collaborative Team Player
-- Self-Taught Enthusiast
-- Adaptable Under Pressure
-
-## Languages
-
-- **Arabic**: Mother Tongue
-- **English**: Intermediate Level
-
-## Summary
-
-I am a passionate frontend developer with a solid foundation in HTML5, CSS3, and JavaScript. I excel at building visually appealing and user-centric web experiences. My expertise in React.js and Next.js allows me to create dynamic and responsive applications, while my knowledge of TypeScript enhances code maintainability and scalability. I'm well-versed in Git & GitHub for version control, which helps foster collaborative development environments. My strengths include quick adaptation to new technologies, effective collaboration within cross-functional teams, and delivering high-quality results under pressure. I am committed to continuous learning and self-improvement, as evidenced by my completion of various courses and keeping up with industry trends.
-
-## Contact
-
-- **Email**: moeslam843@gmail.com
-- **Phone**: +20 1097423297
-- **Location**: Egypt, Beheira, Itay Elbaroud
-
-## Connect with Me
-
-- [GitHub](https://github.com/islamhafez0)
-- [LinkedIn](https://www.linkedin.com/in/islam-hafez-103902246/)
-
-Feel free to reach out if you'd like to collaborate or learn more about my work!
-`;
+export const markdownContent = "##Comming Soon";

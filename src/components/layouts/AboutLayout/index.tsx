@@ -24,16 +24,17 @@ const AboutLayout = () => {
           </h2>
           <div className="md:max-w-[500px]">
             <p className="text-gray-400">
-              Eslam Hafez, Code Artisan mastering the realms of React, Next.js,
-              and TypeScript – a trinity of tech brilliance.
+              Eslam Hafez, a code artisan, is on a journey to master the
+              powerful trio of React, Next.js, and TypeScript, crafting
+              exceptional web experiences along the way.
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row flex-wrap gap-4 lg:gap-6 justify-center mt-8 md:mt-16">
+        <ul className="gap-4 mt-8 md:mt-16 grid-box">
           {cards.map((card) => {
             return <AboutCard key={card.card.title} card={card} />;
           })}
-        </div>
+        </ul>
       </motion.div>
     </section>
   );

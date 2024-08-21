@@ -86,7 +86,7 @@ export const Header = () => {
           </li>
         </ul>
         <div className="menu md:hidden gap-4 relative">
-          <div>
+          <button className="w-11 h-11 hover:bg-gray-900 rounded-full flex items-center justify-center transition-all">
             {showList ? (
               <LazyLoadImage
                 className="cursor-pointer w-[20px] transition-all"
@@ -97,7 +97,7 @@ export const Header = () => {
               />
             ) : (
               <LazyLoadImage
-                className="cursor-pointer w-[28px] transition-all"
+                className="cursor-pointer w-[24px] transition-all"
                 src={menu}
                 placeholderSrc={menu}
                 effect={imageLoaded ? undefined : "blur"}
@@ -106,10 +106,10 @@ export const Header = () => {
                 onLoad={() => setImageLoaded(true)}
               />
             )}
-          </div>
+          </button>
           {showList && (
             <ul
-              className={`bg-gray-900 flex items-center p-4 gap-2 flex-col w-[100px] h-[220px] absolute top-[2rem] right-0 z-10 ${classes.menuList}`}
+              className={`bg-gray-900 flex items-center p-4 gap-2 flex-col w-36 h-56 absolute top-14 right-[11px] z-10 ${classes.menuList}`}
             >
               {navLinks.map((link) => {
                 return (

@@ -5,13 +5,14 @@ const MeContentTab = () => {
     <div>
       <p className="text-gray-300 font-medium">
         <img className="w-8 h-8 mb-3" src={hand} alt="hand" />
-        Welcome to My Portfolio! Self-Taught Frontend Developer with Dedication,
-        Quick Learning, and Collaborative Spirit.
+        I’m a self-taught frontend developer driven by a love for crafting
+        beautiful, user-friendly websites. I’m a quick learner, dedicated to
+        growing my skills, and I thrive in collaborative environments.
       </p>
-      <ul>
-        <h3 className="my-4 text-2xl font-bold">What I Offer:</h3>
+      <h3 className="my-4 text-2xl font-bold m-auto">What I Bring:</h3>
+      <ul className="list-disc ml-10">
         {personalItemsDetails.map((item) => (
-          <li className="ps-6 mb-4 text-gray-400" key={item.key}>
+          <li className="mb-4 text-gray-400" key={item.key}>
             {item.itemTitle}
           </li>
         ))}
